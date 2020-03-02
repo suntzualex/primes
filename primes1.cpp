@@ -112,7 +112,7 @@ void searchPrimeNumbers() {
 void searchPrimeNumbersThreaded() {
    
     int threadLocalCounter = 0;
-    cout << "thread local = " << threadLocalCounter << endl;
+    // cout << "thread local = " << threadLocalCounter << endl;
     while(counter+threadLocalCounter < maxNumberToTestPrimeFor){
        int index = counter+threadLocalCounter;
        primeNumberCandidates[index] = isPrime(index+1);
